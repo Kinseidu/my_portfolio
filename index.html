@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seidu Kinasua - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1><a href="#home">Seidu Kinasua</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h2 >Aspiring Data Scientist </h2>
+            <p>Creating impactful solutions through technology</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="profile">
+                <img src="assests/WhatsApp Image 2024-08-08 at 16.38.32_0045289b.jpg" alt="Seidu Kinasua">
+                <img src="assests/seidu.jpg" alt="Seidu Kinasua">
+                <p> I am Seidu Kinasua, a passionate Data Science and Software Engineering enthusiast from Tempane, Ghana. Currently pursuing a BSc in Information Systems and Technology at the University of Mines and Technology, I have a strong foundation in software development and data analysis.</p>
+                <p><strong>As an aspiring data scientist, my dreams revolve around harnessing the power of data to drive positive change. I aim to uncover hidden insights, tackle real-world problems like climate change and healthcare, and foster data-driven cultures within organizations. Additionally, I strive to develop AI solutions that improve lives and society. Ultimately, I hope to share my knowledge and experience to inspire and mentor others in the field, creating a ripple effect of positive impact through data science.</strong></p>
+                <p><strong>Education:</strong></p>
+                <ul>
+                    <li><strong>BSc Information Systems and Technology</strong> - University of Mines and Technology </li>
+                    <li><strong>WASSCE</strong> - Bolgatanga Senior High School (General Science)</li>
+                </ul>
+                <p><a href="assests/Seidu_Kinasua _cv.pdf" class="cta-button" download>Download CV</a></p>
+                <p><a href="mailto:seidukinasua@gmail.com">Email: seidukinasua@gmail.com</a></p>
+                <p>
+                    <a href="https://www.linkedin.com/in/seidu-kinasua">LinkedIn</a> | 
+                    <a href="https://github.com/Kinseidu">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <ul>
+                    <li>Python</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>SQL, MongoDB</li>
+                    <li>MS Office, Excel</li>
+                    <li>Analytical Thinking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <!-- Hospital Management System using MongoDB -->
+            <div class="project">
+                <h3>Hospital Management System using MongoDB</h3>
+                <img src="assests/database.jpg" alt="Hospital Management System">
+                <p>Description: Developed a comprehensive database system for managing hospital records, implementing CRUD operations for efficient patient information management.</p>
+            </div>
+
+            <!-- Sales and Expenses Data Management in Excel -->
+            <div class="project">
+                <h3>Sales and Expenses Data Management in Excel</h3>
+                <img src="assests/excel.png" alt="Sales and Expenses Data Management">
+                <p>Description: Created detailed visual charts and graphs to analyze sales and expenses, leveraging advanced Excel functions for streamlined data management.</p>
+            </div>
+
+            <!-- CRUD Application using HTML and CSS -->
+            <div class="project">
+                <h3>CRUD Application using HTML and CSS</h3>
+                <img src="assests/Screenshot_crud.jpeg" alt="CRUD Application">
+                <p>Description: Designed and developed a functional CRUD application, focusing on user-friendly interface and responsive design.</p>
+            </div>
+
+            <!-- Smart Car Parking System -->
+            <div class="project">
+                <h3>Smart Car Parking System using Arduino and IoT</h3>
+                <div class="project-gallery">
+                    <img src="assests/iot.jpg" alt="Smart Car Parking System Image 1">
+                    <img src="assests/10t.jpg" alt="Smart Car Parking System Image 2">
+                    <img src="assests/1725644868983.jpg" alt="Smart Car Parking System Image 3">
+                </div>
+                <p>Description: Collaborated in a group to develop a Smart Car Parking System using Arduino, integrated with IoT for real-time parking management in the cloud.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for project collaborations or any opportunities.</p>
+            <form id="contact-form" action="https://formspree.io/f/{your_form_id}" method="POST">
+                <div class="form-group">
+                    <label for="name">Name<span>*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" name="_replyto" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject<span>*</span></label>
+                    <input type="text" id="subject" name="subject" required placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message<span>*</span></label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
