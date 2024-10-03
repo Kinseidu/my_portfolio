@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #0a0606;
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
@@ -80,22 +80,7 @@ header nav ul li a:hover::after {
 
 /* Hero Section */
 #home {
-    background: url('images.jpeg') no-repeat center center/cover; /* Change this line */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #f1e14a;
-    position: relative;
-    overflow: hidden;
-}
-
-
-
-/* Hero Section */
-#home {
-    background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+    background: url('assets/images.jpeg') no-repeat center center/cover; /* Make sure the file path is correct */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -336,6 +321,12 @@ header nav ul li a:hover::after {
 #contact button:hover {
     background-color: #fff;
     color: #333;
+}
+
+footer{
+    padding: 20px 30px;
+    color: #f0a500;
+    background: #f9f9f9;
 }
 
 /* Keyframes for Motion Effects */
