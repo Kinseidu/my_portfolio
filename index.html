@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seidu Kinasua - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
@@ -23,29 +25,29 @@
     </header>
 
     <!-- Home Section -->
-    <section id="home">
+    <section id="home" aria-labelledby="home-heading">
         <div class="hero">
-            <h2 >Aspiring Data Scientist </h2>
+            <h2 id="home-heading">Aspiring Data Scientist</h2>
             <p>Creating impactful solutions through technology</p>
             <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about" aria-labelledby="about-heading">
         <div class="container">
-            <h2>About Me</h2>
+            <h2 id="about-heading">About Me</h2>
             <div class="profile">
-                <img src="assests/WhatsApp Image 2024-08-08 at 16.38.32_0045289b.jpg" alt="Seidu Kinasua">
-                <img src="assests/seidu.jpg" alt="Seidu Kinasua">
-                <p> I am Seidu Kinasua, a passionate Data Science and Software Engineering enthusiast from Tempane, Ghana. Currently pursuing a BSc in Information Systems and Technology at the University of Mines and Technology, I have a strong foundation in software development and data analysis.</p>
+                <img src="assets/WhatsApp Image 2024-08-08 at 16.38.32_0045289b.jpg" alt="Seidu Kinasua" class="profile-image">
+                <img src="assets/seidu.jpg" alt="Seidu Kinasua" class="profile-image">
+                <p>I am Seidu Kinasua, a passionate Data Science and Software Engineering enthusiast from Tempane, Ghana. Currently pursuing a BSc in Information Systems and Technology at the University of Mines and Technology, I have a strong foundation in software development and data analysis.</p>
                 <p><strong>As an aspiring data scientist, my dreams revolve around harnessing the power of data to drive positive change. I aim to uncover hidden insights, tackle real-world problems like climate change and healthcare, and foster data-driven cultures within organizations. Additionally, I strive to develop AI solutions that improve lives and society. Ultimately, I hope to share my knowledge and experience to inspire and mentor others in the field, creating a ripple effect of positive impact through data science.</strong></p>
                 <p><strong>Education:</strong></p>
                 <ul>
-                    <li><strong>BSc Information Systems and Technology</strong> - University of Mines and Technology </li>
+                    <li><strong>BSc Information Systems and Technology</strong> - University of Mines and Technology</li>
                     <li><strong>WASSCE</strong> - Bolgatanga Senior High School (General Science)</li>
                 </ul>
-                <p><a href="assests/Seidu_Kinasua _cv.pdf" class="cta-button" download>Download CV</a></p>
+                <p><a href="assets/Seidu_Kinasua _cv.pdf" class="cta-button" download>Download CV</a></p>
                 <p><a href="mailto:seidukinasua@gmail.com">Email: seidukinasua@gmail.com</a></p>
                 <p>
                     <a href="https://www.linkedin.com/in/seidu-kinasua">LinkedIn</a> | 
@@ -56,9 +58,9 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" aria-labelledby="skills-heading">
         <div class="container">
-            <h2>Technical Skills</h2>
+            <h2 id="skills-heading">Technical Skills</h2>
             <div class="skills-list">
                 <ul>
                     <li>Python</li>
@@ -72,28 +74,28 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" aria-labelledby="projects-heading">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 id="projects-heading">Projects</h2>
 
             <!-- Hospital Management System using MongoDB -->
             <div class="project">
                 <h3>Hospital Management System using MongoDB</h3>
-                <img src="assests/database.jpg" alt="Hospital Management System">
+                <img src="assets/database.jpg" alt="Hospital Management System" class="project-image">
                 <p>Description: Developed a comprehensive database system for managing hospital records, implementing CRUD operations for efficient patient information management.</p>
             </div>
 
             <!-- Sales and Expenses Data Management in Excel -->
             <div class="project">
                 <h3>Sales and Expenses Data Management in Excel</h3>
-                <img src="assests/excel.png" alt="Sales and Expenses Data Management">
+                <img src="assets/excel.png" alt="Sales and Expenses Data Management" class="project-image">
                 <p>Description: Created detailed visual charts and graphs to analyze sales and expenses, leveraging advanced Excel functions for streamlined data management.</p>
             </div>
 
             <!-- CRUD Application using HTML and CSS -->
             <div class="project">
                 <h3>CRUD Application using HTML and CSS</h3>
-                <img src="assests/Screenshot_crud.jpeg" alt="CRUD Application">
+                <img src="assets/Screenshot_crud.jpeg" alt="CRUD Application" class="project-image">
                 <p>Description: Designed and developed a functional CRUD application, focusing on user-friendly interface and responsive design.</p>
             </div>
 
@@ -101,9 +103,9 @@
             <div class="project">
                 <h3>Smart Car Parking System using Arduino and IoT</h3>
                 <div class="project-gallery">
-                    <img src="assests/iot.jpg" alt="Smart Car Parking System Image 1">
-                    <img src="assests/10t.jpg" alt="Smart Car Parking System Image 2">
-                    <img src="assests/1725644868983.jpg" alt="Smart Car Parking System Image 3">
+                    <img src="assets/iot.jpg" alt="Smart Car Parking System Image 1" class="project-image">
+                    <img src="assets/10t.jpg" alt="Smart Car Parking System Image 2" class="project-image">
+                    <img src="assets/1725644868983.jpg" alt="Smart Car Parking System Image 3" class="project-image">
                 </div>
                 <p>Description: Collaborated in a group to develop a Smart Car Parking System using Arduino, integrated with IoT for real-time parking management in the cloud.</p>
             </div>
@@ -111,9 +113,9 @@
     </section>
 
     <!-- Contact Form Section -->
-    <section id="contact">
+    <section id="contact" aria-labelledby="contact-heading">
         <div class="container">
-            <h2>Contact Me</h2>
+            <h2 id="contact-heading">Contact Me</h2>
             <p>Feel free to reach out for project collaborations or any opportunities.</p>
             <form id="contact-form" action="https://formspree.io/f/{your_form_id}" method="POST">
                 <div class="form-group">
@@ -136,5 +138,13 @@
             </form>
         </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Seidu Kinasua. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
