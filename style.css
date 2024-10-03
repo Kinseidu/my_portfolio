@@ -53,7 +53,12 @@ header nav ul li a {
     font-size: 1rem;
     letter-spacing: 1px;
     position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.1);
+    color: #f0a500;
 }
 
 header nav ul li a::after {
@@ -73,9 +78,20 @@ header nav ul li a:hover::after {
     width: 100%;
 }
 
-header nav ul li a:hover {
-    color: #f0a500;
+/* Hero Section */
+#home {
+    background: url('images.jpeg') no-repeat center center/cover; /* Change this line */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f1e14a;
+    position: relative;
+    overflow: hidden;
 }
+
+
 
 /* Hero Section */
 #home {
@@ -112,6 +128,7 @@ header nav ul li a:hover {
     letter-spacing: 1px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     animation: bounceIn 2.5s ease-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover {
@@ -157,10 +174,6 @@ header nav ul li a:hover {
     max-width: 500px;
     line-height: 1.7;
     animation: slideInLeft 1.5s ease-out;
-}
-
-.cta-button:hover {
-    background-color: #f0a500;
 }
 
 /* Skills Section */
@@ -248,8 +261,6 @@ header nav ul li a:hover {
 .project h3 {
     font-size: 1.8rem;
     color: #333;
-
-    
 }
 
 .project p {
@@ -355,7 +366,6 @@ header nav ul li a:hover {
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -366,11 +376,10 @@ header nav ul li a:hover {
     }
     100% {
         opacity: 1;
-        }
     }
+}
 
-
-    /* Smart Car Parking System Gallery */
+/* Smart Car Parking System Gallery */
 .project-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -391,5 +400,32 @@ header nav ul li a:hover {
     transform: scale(1.05);
 }
 
-
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #about .profile {
+        flex-direction: column;
+        align-items: center;
+    }
     
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #skills .skills-list {
+        grid-template-columns: 1fr; /* Stack on small screens */
+    }
+
+    #projects .project {
+        margin-bottom: 20px;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 1rem; /* Slightly reduce font size */
+    }
+
+    #contact h2 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+}
